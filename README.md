@@ -293,8 +293,8 @@ This project is open source software licensed under the [MIT License](LICENSE).
 For support, please open an issue on GitHub or contact the maintainers.
 
 ---
-## Have Question
-
+## Have Question?
+Send your questions to:
 Email: sunrise300@gmail.com
 
-Made for animal rescue organizations worldwide
+Made for animal rescue organizations worldwide, Developer: Aziz Khan
