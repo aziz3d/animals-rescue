@@ -1,0 +1,143 @@
+/* Accessibility Enhancements for Lovely Paws Rescue */
+
+/* Skip Navigation Link */
+.skip-nav {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #d97706;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 0 0 4px 4px;
+    z-index: 1000;
+    font-weight: 600;
+}
+
+.skip-nav:focus {
+    top: 0;
+}
+
+/* Focus Indicators */
+.focus-visible:focus-visible {
+    outline: 2px solid #d97706;
+    outline-offset: 2px;
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    .text-amber-700 {
+        color: #000 !important;
+    }
+    
+    .text-amber-600 {
+        color: #000 !important;
+    }
+    
+    .bg-amber-50 {
+        background-color: #fff !important;
+    }
+    
+    .border-amber-200 {
+        border-color: #000 !important;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Screen Reader Only Content */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Focus Management for Dynamic Content */
+.livewire-loading {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+/* Improved Form Focus States */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #d97706;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.1);
+}
+
+/* Button Focus States */
+button:focus-visible,
+a:focus-visible {
+    outline: 2px solid #d97706;
+    outline-offset: 2px;
+}
+
+/* Error State Accessibility */
+.error-field {
+    border-color: #dc2626 !important;
+    background-color: #fef2f2;
+}
+
+.error-message {
+    color: #dc2626;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Loading State Accessibility */
+.loading-spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Mobile Touch Targets */
+@media (max-width: 768px) {
+    button,
+    a,
+    input[type="checkbox"],
+    input[type="radio"] {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    .touch-target {
+        padding: 12px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    .print-only {
+        display: block !important;
+    }
+    
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+}

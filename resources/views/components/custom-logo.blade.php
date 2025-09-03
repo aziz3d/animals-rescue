@@ -1,0 +1,1 @@
+<img src="{{ asset('logo.png') }}" alt="{{ config('app.name', 'Animal Rescue') }}" {{ $attributes->merge(['class' => 'h-16 w-auto mx-auto']) }}>
