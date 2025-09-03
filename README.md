@@ -157,8 +157,8 @@ STRIPE_SECRET=your_stripe_secret
 
 After seeding, login with:
 
--   **Email**: admin@example.com
--   **Password**: password
+-   **Email**: sunrise300@gmail.com
+-   **Password**: azizkhan
 
 ## Key Modules
 
@@ -203,11 +203,6 @@ After seeding, login with:
 -   Automated responses
 -   Category-based routing
 -   Status management
-
-## Admin Login
-
-User: sunrise300@gmail.com
-Password: azizkhan
 
 ## Admin Panel
 
