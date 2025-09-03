@@ -40,8 +40,8 @@ A comprehensive, modern website for animal rescue organizations built with Larav
 
 ## Tech Stack
 
--   **Backend**: Laravel 10+, PHP 8.1+
--   **Frontend**: Blade Templates, Tailwind CSS, Alpine.js
+-   **Backend**: Laravel 12+, PHP 8.2+
+-   **Frontend**: Blade Templates, Tailwind CSS
 -   **Components**: Livewire for dynamic interfaces
 -   **Database**: MySQL 8.0+ or PostgreSQL 12+
 -   **File Storage**: Local and Cloud storage support
