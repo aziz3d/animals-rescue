@@ -139,6 +139,8 @@ class ImagePathFixer extends Component
 
         return view('livewire.admin.image-path-fixer', [
             'storageStatus' => $storageStatus
+        ])->layout('components.layouts.app', [
+            'title' => 'Image Path Fixer - Lovely Paws Rescue'
         ]);
     }
 }

@@ -142,6 +142,9 @@ class Index extends Component
 
     public function render()
     {
-        return view('livewire.admin.comments.index');
+        return view('livewire.admin.comments.index')
+            ->layout('components.layouts.app', [
+                'title' => 'Comment Management - Lovely Paws Rescue'
+            ]);
     }
 }
